@@ -3,18 +3,126 @@
 <head>
   <meta charset="UTF-8">
   <title>Sage Training Institution - Course Registration</title>
+  <style>
+body {
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  
+  
+
+}
+
+header{
+  background-color: rgb(0, 153, 255);
+  text-align: center;
+  margin: 0;
+  padding: 50px;
+}
+
+header h1
+{ font-size: 80px;
+  color: red;
+
+}
+
+header p{color: red;
+font-size: 40px;
+}
+
+nav {
+  background-color: gray;
+  padding: 20px;
+  margin: 0;
+
+}
+
+header h2 {
+  color: rgb(12, 10, 10);
+  font-size: 20px;
+
+}
+nav h2{
+  color: black;
+}
+nav li{
+  display: inline;
+  color: black;
+  margin-right: 30px;
+  list-style: none;
+  
+}
+nav ul li a{
+  text-decoration:none;
+  color: white;
+}
+nav ul li a:hover{
+  color: red;
+}
+
+nav ul li a:visited{
+  color: yellow;
+}
+#courses{
+  background-color: yellow;
+  margin: 0;
+  padding: 20px;
+}
+#courses dl dt{
+  font-weight: bold;
+}
+#courses p{
+  font-weight: bold;
+  color:green;
+}
+
+#schedule{
+  background-color: rgb(11, 123, 175);
+  margin: 20px;
+  padding: 20px;
+}
+
+
+#method{
+  background-color: gold;
+  margin: 0;
+  padding: 20;
+
+}
+table{
+  
+  width: 100%;
+  border: 1px solid red;
+  border-collapse: collapse;
+}
+th{
+  border: 1px solid red;
+  padding: 10px;
+}
+table tr td{
+  padding: 10px;
+border: 1px solid red;
+}
+
+#register{
+  
+}
+
+
+  </style>
 </head>
 <body>
 
   <!-- Page Header -->
   <header>
-    <h1>Sage Training Institution</h1>
+    <h1 style="color: black;">Sage Training Institution</h1>
     <p>Empowering you with modern web development skills!</p>
   </header>
 
   <!-- Navigation Menu -->
   <nav>
-    <h2>Menu</h2>
+    <h2 style="color:black; font-size: 40px;">Menu</h2>
+    <hr>
     <ul>
       <li><a href="#courses">Available Courses</a></li>
       <li><a href="#schedule">Course Schedule</a></li>
@@ -51,13 +159,13 @@
   <section id="schedule">
     <h2>Weekly Schedule</h2>
 
-    <table border="1">
+    <table>
       <tr>
         <th rowspan="2">Day</th>
-        <th colspan="2">Sessions</th>
+        <th colspan="2" id="Morning">Sessions</th>
       </tr>
       <tr>
-        <th>Morning</th>
+        <th id="Morning">Morning</th>
         <th>Afternoon</th>
       </tr>
       <tr>
